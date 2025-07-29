@@ -1,0 +1,9 @@
+BCFTOOLS_STATS:
+  bcftools: 1.2
+MANTA_GERMLINE:
+  manta: 1.6.0
+VCFTOOLS_TSTV_COUNT:
+  vcftools: 0.1.16
+Workflow:
+    nf-core/sarek: v3.5.1-g5fe5cdf
+    Nextflow: 25.04.6

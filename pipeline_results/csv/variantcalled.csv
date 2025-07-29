@@ -1,0 +1,2 @@
+patient,sample,variantcaller,vcf
+patient1,test_sample,manta,results//variant_calling/manta/test_sample/test_sample.manta.diploid_sv.vcf.gz

@@ -1,0 +1,2749 @@
+{
+    "object_id": "urn:uuid:0a861418-d5c1-4bd6-9a3a-037cc1585371",
+    "spec_version": "https://w3id.org/ieee/ieee-2791-schema/2791object.json",
+    "etag": "2425a4186f1abe81234665de67a2b0e1",
+    "provenance_domain": {
+        "name": "nf-core/sarek",
+        "version": "3.5.1",
+        "created": "2025-07-11T11:40:39.326252072+02:00",
+        "modified": "2025-07-11T11:40:39.326252072+02:00",
+        "contributors": [
+            {
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Maxime Garcia"
+            },
+            {
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Szilveszter Juhos"
+            },
+            {
+                "contribution": [
+                    "authoredBy"
+                ],
+                "name": "Friederike Hanssen"
+            }
+        ],
+        "license": ""
+    },
+    "usability_domain": [
+        
+    ],
+    "extension_domain": [
+        {
+            "extension_schema": "https://w3id.org/biocompute/extension_domain/1.1.0/scm/scm_extension.json",
+            "scm_extension": {
+                "scm_repository": "https://github.com/nf-core/sarek",
+                "scm_type": "git",
+                "scm_commit": "5fe5cdff171e3baed603b3990cab7f7fd3fcb992",
+                "scm_path": "main.nf",
+                "scm_preview": "https://github.com/nf-core/sarek/tree/5fe5cdff171e3baed603b3990cab7f7fd3fcb992/main.nf"
+            }
+        }
+    ],
+    "description_domain": {
+        "keywords": [
+            
+        ],
+        "platform": [
+            "Nextflow"
+        ],
+        "pipeline_steps": [
+            {
+                "step_number": 1,
+                "name": "eb95f9718d23336e83c6104c4a6b0f6e",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:CREATE_INTERVALS_BED (wgs_calling_regions_noseconds.hg38.bed)",
+                "input_list": [
+                    {
+                        "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/c6/7cd183f703f72f9a15b85af75ced9b/wgs_calling_regions_noseconds.hg38.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr10_39590436-39593013.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr11_51078349-54425074.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr12_37235253-37240944.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr13_86252980-111703855.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr15_20729747-21193490.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr17_60001-448188.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr18_47019913-54536574.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr1_10001-207666.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr1_122026460-124977944.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr20_36314720-64334167.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr2_16146120-32867130.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr2_238904048-242183529.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr4_10001-1429358.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr4_190173122-190204555.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr5_139453660-155760324.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr6_95070791-167591393.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr7_58169654-60828234.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr8_44033745-45877265.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr9_41229379-41237752.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chrX_37285838-49348394.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chrY_9055175-9057608.bed"
+                    },
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 10,
+                "name": "2bcd0c0884bd01268e19924fbfab15c6",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_COMBINED (wgs_calling_regions_noseconds.hg38)",
+                "input_list": [
+                    {
+                        "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/c6/7cd183f703f72f9a15b85af75ced9b/wgs_calling_regions_noseconds.hg38.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/2b/cd0c0884bd01268e19924fbfab15c6/wgs_calling_regions_noseconds.hg38.bed.gz"
+                    },
+                    {
+                        "uri": "work/2b/cd0c0884bd01268e19924fbfab15c6/wgs_calling_regions_noseconds.hg38.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/2b/cd0c0884bd01268e19924fbfab15c6/wgs_calling_regions_noseconds.hg38.bed.gz"
+                    },
+                    {
+                        "uri": "work/2b/cd0c0884bd01268e19924fbfab15c6/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 17,
+                "name": "c42cfdc0dbd90aad1cccc89f203d1063",
+                "description": "NFCORE_SAREK:SAREK:CRAM_SAMPLEQC:CRAM_QC_RECAL:SAMTOOLS_STATS (test_sample)",
+                "input_list": [
+                    {
+                        "uri": "references/3.cram"
+                    },
+                    {
+                        "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/10/05282dcb183544f14c561f63a0d002/Homo_sapiens_assembly38.fasta"
+                    },
+                    {
+                        "uri": "references/3.cram.crai"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/c4/2cfdc0dbd90aad1cccc89f203d1063/test_sample.recal.cram.stats"
+                    },
+                    {
+                        "uri": "work/c4/2cfdc0dbd90aad1cccc89f203d1063/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 18,
+                "name": "ca9f38cf7f73f7d6f7c80a599162086b",
+                "description": "NFCORE_SAREK:SAREK:CRAM_SAMPLEQC:CRAM_QC_RECAL:MOSDEPTH (test_sample)",
+                "input_list": [
+                    {
+                        "uri": "references/3.cram"
+                    },
+                    {
+                        "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/10/05282dcb183544f14c561f63a0d002/Homo_sapiens_assembly38.fasta"
+                    },
+                    {
+                        "uri": "references/3.cram.crai"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/ca/9f38cf7f73f7d6f7c80a599162086b/test_sample.recal.mosdepth.global.dist.txt"
+                    },
+                    {
+                        "uri": "work/ca/9f38cf7f73f7d6f7c80a599162086b/test_sample.recal.mosdepth.summary.txt"
+                    },
+                    {
+                        "uri": "work/ca/9f38cf7f73f7d6f7c80a599162086b/test_sample.recal.mosdepth.region.dist.txt"
+                    },
+                    {
+                        "uri": "work/ca/9f38cf7f73f7d6f7c80a599162086b/test_sample.recal.regions.bed.gz"
+                    },
+                    {
+                        "uri": "work/ca/9f38cf7f73f7d6f7c80a599162086b/test_sample.recal.regions.bed.gz.csi"
+                    },
+                    {
+                        "uri": "work/ca/9f38cf7f73f7d6f7c80a599162086b/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 22,
+                "name": "43c2881e59d3a5e1045cf330126a58b0",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr2_16146120-32867130)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr2_16146120-32867130.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/43/c2881e59d3a5e1045cf330126a58b0/chr2_16146120-32867130.bed.gz"
+                    },
+                    {
+                        "uri": "work/43/c2881e59d3a5e1045cf330126a58b0/chr2_16146120-32867130.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/43/c2881e59d3a5e1045cf330126a58b0/chr2_16146120-32867130.bed.gz"
+                    },
+                    {
+                        "uri": "work/43/c2881e59d3a5e1045cf330126a58b0/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 23,
+                "name": "5d1676ffef8db07aa056e82989bb0d45",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr2_238904048-242183529)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr2_238904048-242183529.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/5d/1676ffef8db07aa056e82989bb0d45/chr2_238904048-242183529.bed.gz"
+                    },
+                    {
+                        "uri": "work/5d/1676ffef8db07aa056e82989bb0d45/chr2_238904048-242183529.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/5d/1676ffef8db07aa056e82989bb0d45/chr2_238904048-242183529.bed.gz"
+                    },
+                    {
+                        "uri": "work/5d/1676ffef8db07aa056e82989bb0d45/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 24,
+                "name": "54f0f6bd0ffb77f18063b67795313f5f",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr4_10001-1429358)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr4_10001-1429358.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/54/f0f6bd0ffb77f18063b67795313f5f/chr4_10001-1429358.bed.gz"
+                    },
+                    {
+                        "uri": "work/54/f0f6bd0ffb77f18063b67795313f5f/chr4_10001-1429358.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/54/f0f6bd0ffb77f18063b67795313f5f/chr4_10001-1429358.bed.gz"
+                    },
+                    {
+                        "uri": "work/54/f0f6bd0ffb77f18063b67795313f5f/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 25,
+                "name": "841fac69688ed525345e1f1009163141",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr12_37235253-37240944)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr12_37235253-37240944.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/84/1fac69688ed525345e1f1009163141/chr12_37235253-37240944.bed.gz"
+                    },
+                    {
+                        "uri": "work/84/1fac69688ed525345e1f1009163141/chr12_37235253-37240944.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/84/1fac69688ed525345e1f1009163141/chr12_37235253-37240944.bed.gz"
+                    },
+                    {
+                        "uri": "work/84/1fac69688ed525345e1f1009163141/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 26,
+                "name": "84f20c68a91b9479a226580e90876f83",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr15_20729747-21193490)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr15_20729747-21193490.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/84/f20c68a91b9479a226580e90876f83/chr15_20729747-21193490.bed.gz"
+                    },
+                    {
+                        "uri": "work/84/f20c68a91b9479a226580e90876f83/chr15_20729747-21193490.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/84/f20c68a91b9479a226580e90876f83/chr15_20729747-21193490.bed.gz"
+                    },
+                    {
+                        "uri": "work/84/f20c68a91b9479a226580e90876f83/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 27,
+                "name": "8bf51f46537114ae2d8120b8862533e3",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr7_58169654-60828234)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr7_58169654-60828234.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/8b/f51f46537114ae2d8120b8862533e3/chr7_58169654-60828234.bed.gz"
+                    },
+                    {
+                        "uri": "work/8b/f51f46537114ae2d8120b8862533e3/chr7_58169654-60828234.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/8b/f51f46537114ae2d8120b8862533e3/chr7_58169654-60828234.bed.gz"
+                    },
+                    {
+                        "uri": "work/8b/f51f46537114ae2d8120b8862533e3/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 28,
+                "name": "9d1c5528a6f585c2effcb4d2ef86980e",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr10_39590436-39593013)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr10_39590436-39593013.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/9d/1c5528a6f585c2effcb4d2ef86980e/chr10_39590436-39593013.bed.gz"
+                    },
+                    {
+                        "uri": "work/9d/1c5528a6f585c2effcb4d2ef86980e/chr10_39590436-39593013.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/9d/1c5528a6f585c2effcb4d2ef86980e/chr10_39590436-39593013.bed.gz"
+                    },
+                    {
+                        "uri": "work/9d/1c5528a6f585c2effcb4d2ef86980e/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 29,
+                "name": "4328dcb23cd512c03cdf004d5dfa842f",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr8_44033745-45877265)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr8_44033745-45877265.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/43/28dcb23cd512c03cdf004d5dfa842f/chr8_44033745-45877265.bed.gz"
+                    },
+                    {
+                        "uri": "work/43/28dcb23cd512c03cdf004d5dfa842f/chr8_44033745-45877265.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/43/28dcb23cd512c03cdf004d5dfa842f/chr8_44033745-45877265.bed.gz"
+                    },
+                    {
+                        "uri": "work/43/28dcb23cd512c03cdf004d5dfa842f/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 30,
+                "name": "95b4f067d94b71fcbea48ba3635efffa",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr20_36314720-64334167)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr20_36314720-64334167.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/95/b4f067d94b71fcbea48ba3635efffa/chr20_36314720-64334167.bed.gz"
+                    },
+                    {
+                        "uri": "work/95/b4f067d94b71fcbea48ba3635efffa/chr20_36314720-64334167.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/95/b4f067d94b71fcbea48ba3635efffa/chr20_36314720-64334167.bed.gz"
+                    },
+                    {
+                        "uri": "work/95/b4f067d94b71fcbea48ba3635efffa/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 31,
+                "name": "377b06b0d0cfefa46a372d0e3fa15b83",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr4_190173122-190204555)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr4_190173122-190204555.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/37/7b06b0d0cfefa46a372d0e3fa15b83/chr4_190173122-190204555.bed.gz"
+                    },
+                    {
+                        "uri": "work/37/7b06b0d0cfefa46a372d0e3fa15b83/chr4_190173122-190204555.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/37/7b06b0d0cfefa46a372d0e3fa15b83/chr4_190173122-190204555.bed.gz"
+                    },
+                    {
+                        "uri": "work/37/7b06b0d0cfefa46a372d0e3fa15b83/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 32,
+                "name": "2d0aa9df4313915efb93f20faf99753d",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr5_139453660-155760324)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr5_139453660-155760324.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/2d/0aa9df4313915efb93f20faf99753d/chr5_139453660-155760324.bed.gz"
+                    },
+                    {
+                        "uri": "work/2d/0aa9df4313915efb93f20faf99753d/chr5_139453660-155760324.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/2d/0aa9df4313915efb93f20faf99753d/chr5_139453660-155760324.bed.gz"
+                    },
+                    {
+                        "uri": "work/2d/0aa9df4313915efb93f20faf99753d/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 33,
+                "name": "9ed7f05b25a9c8f19c29b59505765815",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr6_95070791-167591393)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr6_95070791-167591393.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/9e/d7f05b25a9c8f19c29b59505765815/chr6_95070791-167591393.bed.gz"
+                    },
+                    {
+                        "uri": "work/9e/d7f05b25a9c8f19c29b59505765815/chr6_95070791-167591393.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/9e/d7f05b25a9c8f19c29b59505765815/chr6_95070791-167591393.bed.gz"
+                    },
+                    {
+                        "uri": "work/9e/d7f05b25a9c8f19c29b59505765815/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 34,
+                "name": "d9a506a82dd28b5fad6911f2179ceb08",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr17_60001-448188)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr17_60001-448188.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/d9/a506a82dd28b5fad6911f2179ceb08/chr17_60001-448188.bed.gz"
+                    },
+                    {
+                        "uri": "work/d9/a506a82dd28b5fad6911f2179ceb08/chr17_60001-448188.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/d9/a506a82dd28b5fad6911f2179ceb08/chr17_60001-448188.bed.gz"
+                    },
+                    {
+                        "uri": "work/d9/a506a82dd28b5fad6911f2179ceb08/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 35,
+                "name": "52d40ab6c71da4e5c3e72e5e0dbd5dba",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr1_122026460-124977944)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr1_122026460-124977944.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/52/d40ab6c71da4e5c3e72e5e0dbd5dba/chr1_122026460-124977944.bed.gz"
+                    },
+                    {
+                        "uri": "work/52/d40ab6c71da4e5c3e72e5e0dbd5dba/chr1_122026460-124977944.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/52/d40ab6c71da4e5c3e72e5e0dbd5dba/chr1_122026460-124977944.bed.gz"
+                    },
+                    {
+                        "uri": "work/52/d40ab6c71da4e5c3e72e5e0dbd5dba/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 36,
+                "name": "6cb8b8305e833f71995151bb53159766",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr18_47019913-54536574)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr18_47019913-54536574.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/6c/b8b8305e833f71995151bb53159766/chr18_47019913-54536574.bed.gz"
+                    },
+                    {
+                        "uri": "work/6c/b8b8305e833f71995151bb53159766/chr18_47019913-54536574.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/6c/b8b8305e833f71995151bb53159766/chr18_47019913-54536574.bed.gz"
+                    },
+                    {
+                        "uri": "work/6c/b8b8305e833f71995151bb53159766/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 37,
+                "name": "e28b5beedfe651175b0a08de5256f9c4",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chrX_37285838-49348394)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chrX_37285838-49348394.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/e2/8b5beedfe651175b0a08de5256f9c4/chrX_37285838-49348394.bed.gz"
+                    },
+                    {
+                        "uri": "work/e2/8b5beedfe651175b0a08de5256f9c4/chrX_37285838-49348394.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/e2/8b5beedfe651175b0a08de5256f9c4/chrX_37285838-49348394.bed.gz"
+                    },
+                    {
+                        "uri": "work/e2/8b5beedfe651175b0a08de5256f9c4/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 38,
+                "name": "bfd6b67d0e733c7a8b47534a8083b50d",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr1_10001-207666)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr1_10001-207666.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/bf/d6b67d0e733c7a8b47534a8083b50d/chr1_10001-207666.bed.gz"
+                    },
+                    {
+                        "uri": "work/bf/d6b67d0e733c7a8b47534a8083b50d/chr1_10001-207666.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/bf/d6b67d0e733c7a8b47534a8083b50d/chr1_10001-207666.bed.gz"
+                    },
+                    {
+                        "uri": "work/bf/d6b67d0e733c7a8b47534a8083b50d/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 39,
+                "name": "31491491566c020a12e48c195b3d93a0",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr11_51078349-54425074)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr11_51078349-54425074.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/31/491491566c020a12e48c195b3d93a0/chr11_51078349-54425074.bed.gz"
+                    },
+                    {
+                        "uri": "work/31/491491566c020a12e48c195b3d93a0/chr11_51078349-54425074.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/31/491491566c020a12e48c195b3d93a0/chr11_51078349-54425074.bed.gz"
+                    },
+                    {
+                        "uri": "work/31/491491566c020a12e48c195b3d93a0/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 40,
+                "name": "48e06a23b6b77b2612a09abd618e8d66",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr13_86252980-111703855)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr13_86252980-111703855.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/48/e06a23b6b77b2612a09abd618e8d66/chr13_86252980-111703855.bed.gz"
+                    },
+                    {
+                        "uri": "work/48/e06a23b6b77b2612a09abd618e8d66/chr13_86252980-111703855.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/48/e06a23b6b77b2612a09abd618e8d66/chr13_86252980-111703855.bed.gz"
+                    },
+                    {
+                        "uri": "work/48/e06a23b6b77b2612a09abd618e8d66/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 41,
+                "name": "6cf9b4b50613b17df662bd01eac59690",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chr9_41229379-41237752)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chr9_41229379-41237752.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/6c/f9b4b50613b17df662bd01eac59690/chr9_41229379-41237752.bed.gz"
+                    },
+                    {
+                        "uri": "work/6c/f9b4b50613b17df662bd01eac59690/chr9_41229379-41237752.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/6c/f9b4b50613b17df662bd01eac59690/chr9_41229379-41237752.bed.gz"
+                    },
+                    {
+                        "uri": "work/6c/f9b4b50613b17df662bd01eac59690/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 42,
+                "name": "53c0997863e59069907954012817e6b8",
+                "description": "NFCORE_SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT (chrY_9055175-9057608)",
+                "input_list": [
+                    {
+                        "uri": "work/eb/95f9718d23336e83c6104c4a6b0f6e/chrY_9055175-9057608.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/53/c0997863e59069907954012817e6b8/chrY_9055175-9057608.bed.gz"
+                    },
+                    {
+                        "uri": "work/53/c0997863e59069907954012817e6b8/chrY_9055175-9057608.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "work/53/c0997863e59069907954012817e6b8/chrY_9055175-9057608.bed.gz"
+                    },
+                    {
+                        "uri": "work/53/c0997863e59069907954012817e6b8/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 43,
+                "name": "2319a224d2780183cfc45f161f762f90",
+                "description": "NFCORE_SAREK:SAREK:BAM_VARIANT_CALLING_GERMLINE_ALL:BAM_VARIANT_CALLING_GERMLINE_MANTA:MANTA_GERMLINE (test_sample)",
+                "input_list": [
+                    {
+                        "uri": "references/3.cram"
+                    },
+                    {
+                        "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/10/05282dcb183544f14c561f63a0d002/Homo_sapiens_assembly38.fasta"
+                    },
+                    {
+                        "uri": "work/2b/cd0c0884bd01268e19924fbfab15c6/wgs_calling_regions_noseconds.hg38.bed.gz.tbi"
+                    },
+                    {
+                        "uri": "references/3.cram.crai"
+                    },
+                    {
+                        "uri": "work/2b/cd0c0884bd01268e19924fbfab15c6/wgs_calling_regions_noseconds.hg38.bed.gz"
+                    },
+                    {
+                        "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/89/6a1b6f449c449c82c8deb9dc18c2a6/Homo_sapiens_assembly38.fasta.fai"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.candidate_small_indels.vcf.gz"
+                    },
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.candidate_small_indels.vcf.gz.tbi"
+                    },
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.candidate_sv.vcf.gz"
+                    },
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.candidate_sv.vcf.gz.tbi"
+                    },
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.diploid_sv.vcf.gz"
+                    },
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.diploid_sv.vcf.gz.tbi"
+                    },
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 44,
+                "name": "4a7ea1bf04e0277422e5e826ddc5885f",
+                "description": "NFCORE_SAREK:SAREK:VCF_QC_BCFTOOLS_VCFTOOLS:VCFTOOLS_SUMMARY (test_sample)",
+                "input_list": [
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.diploid_sv.vcf.gz"
+                    },
+                    {
+                        "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/c6/7cd183f703f72f9a15b85af75ced9b/wgs_calling_regions_noseconds.hg38.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/4a/7ea1bf04e0277422e5e826ddc5885f/test_sample.manta.diploid_sv.FILTER.summary"
+                    },
+                    {
+                        "uri": "work/4a/7ea1bf04e0277422e5e826ddc5885f/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 45,
+                "name": "765f9a2bf9bd522637f75c64ef52a53c",
+                "description": "NFCORE_SAREK:SAREK:VCF_QC_BCFTOOLS_VCFTOOLS:VCFTOOLS_TSTV_QUAL (test_sample)",
+                "input_list": [
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.diploid_sv.vcf.gz"
+                    },
+                    {
+                        "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/c6/7cd183f703f72f9a15b85af75ced9b/wgs_calling_regions_noseconds.hg38.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/76/5f9a2bf9bd522637f75c64ef52a53c/test_sample.manta.diploid_sv.TsTv.qual"
+                    },
+                    {
+                        "uri": "work/76/5f9a2bf9bd522637f75c64ef52a53c/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 46,
+                "name": "dbbca21980f9861d985664f3f27bba79",
+                "description": "NFCORE_SAREK:SAREK:VCF_QC_BCFTOOLS_VCFTOOLS:VCFTOOLS_TSTV_COUNT (test_sample)",
+                "input_list": [
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.diploid_sv.vcf.gz"
+                    },
+                    {
+                        "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/c6/7cd183f703f72f9a15b85af75ced9b/wgs_calling_regions_noseconds.hg38.bed"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/db/bca21980f9861d985664f3f27bba79/test_sample.manta.diploid_sv.TsTv.count"
+                    },
+                    {
+                        "uri": "work/db/bca21980f9861d985664f3f27bba79/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 47,
+                "name": "b9d89a270187cf298cd11ed9600ba254",
+                "description": "NFCORE_SAREK:SAREK:VCF_QC_BCFTOOLS_VCFTOOLS:BCFTOOLS_STATS (test_sample)",
+                "input_list": [
+                    {
+                        "uri": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.diploid_sv.vcf.gz"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/b9/d89a270187cf298cd11ed9600ba254/test_sample.manta.diploid_sv.bcftools_stats.txt"
+                    },
+                    {
+                        "uri": "work/b9/d89a270187cf298cd11ed9600ba254/versions.yml"
+                    }
+                ]
+            },
+            {
+                "step_number": 48,
+                "name": "12939494e50a083f6d02898d7944d9b1",
+                "description": "NFCORE_SAREK:SAREK:MULTIQC",
+                "input_list": [
+                    {
+                        "uri": "results/pipeline_info/nf_core_sarek_software_mqc_versions.yml"
+                    },
+                    {
+                        "uri": "https://github.com/nf-core/sarek/tree/5fe5cdff171e3baed603b3990cab7f7fd3fcb992/assets/multiqc_config.yml"
+                    },
+                    {
+                        "uri": "work/4a/7ea1bf04e0277422e5e826ddc5885f/test_sample.manta.diploid_sv.FILTER.summary"
+                    },
+                    {
+                        "uri": "work/db/bca21980f9861d985664f3f27bba79/test_sample.manta.diploid_sv.TsTv.count"
+                    },
+                    {
+                        "uri": "work/tmp/2b/a8a8a497aa44614749ba1f58652b33/workflow_summary_mqc.yaml"
+                    },
+                    {
+                        "uri": "work/b9/d89a270187cf298cd11ed9600ba254/test_sample.manta.diploid_sv.bcftools_stats.txt"
+                    },
+                    {
+                        "uri": "work/tmp/e2/c6da51b985ee3dda3e3cc21ffafd17/methods_description_mqc.yaml"
+                    },
+                    {
+                        "uri": "work/76/5f9a2bf9bd522637f75c64ef52a53c/test_sample.manta.diploid_sv.TsTv.qual"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "uri": "work/12/939494e50a083f6d02898d7944d9b1/multiqc_report.html"
+                    },
+                    {
+                        "uri": "work/12/939494e50a083f6d02898d7944d9b1/multiqc_data"
+                    },
+                    {
+                        "uri": "work/12/939494e50a083f6d02898d7944d9b1/multiqc_plots"
+                    },
+                    {
+                        "uri": "work/12/939494e50a083f6d02898d7944d9b1/versions.yml"
+                    }
+                ]
+            }
+        ]
+    },
+    "execution_domain": {
+        "script": [
+            "https://github.com/nf-core/sarek/tree/5fe5cdff171e3baed603b3990cab7f7fd3fcb992/main.nf"
+        ],
+        "script_driver": "nextflow",
+        "software_prerequisites": [
+            {
+                "name": "Nextflow",
+                "version": "25.04.6",
+                "uri": {
+                    "uri": "https://github.com/nextflow-io/nextflow/releases/tag/v25.04.6"
+                }
+            }
+        ],
+        "external_data_endpoints": [
+            
+        ],
+        "environment_variables": {
+            
+        }
+    },
+    "parametric_domain": [
+        {
+            "param": "input",
+            "value": "input/sample.csv",
+            "step": "0"
+        },
+        {
+            "param": "input_restart",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "step",
+            "value": "variant_calling",
+            "step": "0"
+        },
+        {
+            "param": "genome",
+            "value": "GATK.GRCh38",
+            "step": "0"
+        },
+        {
+            "param": "igenomes_base",
+            "value": "s3://ngi-igenomes/igenomes/",
+            "step": "0"
+        },
+        {
+            "param": "snpeff_cache",
+            "value": "s3://annotation-cache/snpeff_cache/",
+            "step": "0"
+        },
+        {
+            "param": "vep_cache",
+            "value": "s3://annotation-cache/vep_cache/",
+            "step": "0"
+        },
+        {
+            "param": "igenomes_ignore",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "save_reference",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "build_only_index",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "download_cache",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "no_intervals",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "nucleotides_per_second",
+            "value": "200000",
+            "step": "0"
+        },
+        {
+            "param": "tools",
+            "value": "manta",
+            "step": "0"
+        },
+        {
+            "param": "skip_tools",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "split_fastq",
+            "value": "50000000",
+            "step": "0"
+        },
+        {
+            "param": "trim_fastq",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "clip_r1",
+            "value": "0",
+            "step": "0"
+        },
+        {
+            "param": "clip_r2",
+            "value": "0",
+            "step": "0"
+        },
+        {
+            "param": "three_prime_clip_r1",
+            "value": "0",
+            "step": "0"
+        },
+        {
+            "param": "three_prime_clip_r2",
+            "value": "0",
+            "step": "0"
+        },
+        {
+            "param": "trim_nextseq",
+            "value": "0",
+            "step": "0"
+        },
+        {
+            "param": "length_required",
+            "value": "15",
+            "step": "0"
+        },
+        {
+            "param": "save_trimmed",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "save_split_fastqs",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "umi_read_structure",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "group_by_umi_strategy",
+            "value": "Adjacency",
+            "step": "0"
+        },
+        {
+            "param": "aligner",
+            "value": "bwa-mem",
+            "step": "0"
+        },
+        {
+            "param": "use_gatk_spark",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "save_mapped",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "save_output_as_bam",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "seq_center",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "seq_platform",
+            "value": "ILLUMINA",
+            "step": "0"
+        },
+        {
+            "param": "ascat_ploidy",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "ascat_min_base_qual",
+            "value": "20",
+            "step": "0"
+        },
+        {
+            "param": "ascat_min_counts",
+            "value": "10",
+            "step": "0"
+        },
+        {
+            "param": "ascat_min_map_qual",
+            "value": "35",
+            "step": "0"
+        },
+        {
+            "param": "ascat_purity",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "cf_ploidy",
+            "value": "2",
+            "step": "0"
+        },
+        {
+            "param": "cf_coeff",
+            "value": "0.05",
+            "step": "0"
+        },
+        {
+            "param": "cf_contamination",
+            "value": "0",
+            "step": "0"
+        },
+        {
+            "param": "cf_contamination_adjustment",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "cf_mincov",
+            "value": "0",
+            "step": "0"
+        },
+        {
+            "param": "cf_minqual",
+            "value": "0",
+            "step": "0"
+        },
+        {
+            "param": "cf_window",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "cnvkit_reference",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "concatenate_vcfs",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "ignore_soft_clipped_bases",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "joint_germline",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "joint_mutect2",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "only_paired_variant_calling",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "sentieon_dnascope_emit_mode",
+            "value": "variant",
+            "step": "0"
+        },
+        {
+            "param": "sentieon_dnascope_pcr_indel_model",
+            "value": "CONSERVATIVE",
+            "step": "0"
+        },
+        {
+            "param": "sentieon_haplotyper_emit_mode",
+            "value": "variant",
+            "step": "0"
+        },
+        {
+            "param": "wes",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "bcftools_annotations",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "bcftools_annotations_tbi",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "bcftools_header_lines",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "dbnsfp",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "dbnsfp_consequence",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "dbnsfp_fields",
+            "value": "rs_dbSNP,HGVSc_VEP,HGVSp_VEP,1000Gp3_EAS_AF,1000Gp3_AMR_AF,LRT_score,GERP++_RS,gnomAD_exomes_AF",
+            "step": "0"
+        },
+        {
+            "param": "dbnsfp_tbi",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "outdir_cache",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "spliceai_indel",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "spliceai_indel_tbi",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "spliceai_snv",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "spliceai_snv_tbi",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "vep_custom_args",
+            "value": "--everything --filter_common --per_gene --total_length --offline --format vcf",
+            "step": "0"
+        },
+        {
+            "param": "vep_dbnsfp",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "vep_include_fasta",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "vep_loftee",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "vep_out_format",
+            "value": "vcf",
+            "step": "0"
+        },
+        {
+            "param": "vep_spliceai",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "vep_spliceregion",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "vep_version",
+            "value": "111.0-0",
+            "step": "0"
+        },
+        {
+            "param": "multiqc_config",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "multiqc_title",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "multiqc_logo",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "max_multiqc_email_size",
+            "value": "25.MB",
+            "step": "0"
+        },
+        {
+            "param": "multiqc_methods_description",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "outdir",
+            "value": "results/",
+            "step": "0"
+        },
+        {
+            "param": "publish_dir_mode",
+            "value": "copy",
+            "step": "0"
+        },
+        {
+            "param": "email",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "email_on_fail",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "plaintext_email",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "monochrome_logs",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "hook_url",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "help",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "help_full",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "show_hidden",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "version",
+            "value": "false",
+            "step": "0"
+        },
+        {
+            "param": "pipelines_testdata_base_path",
+            "value": "https://raw.githubusercontent.com/nf-core/test-datasets/",
+            "step": "0"
+        },
+        {
+            "param": "config_profile_name",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "config_profile_description",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "custom_config_version",
+            "value": "master",
+            "step": "0"
+        },
+        {
+            "param": "custom_config_base",
+            "value": "https://raw.githubusercontent.com/nf-core/configs/master",
+            "step": "0"
+        },
+        {
+            "param": "config_profile_contact",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "config_profile_url",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "test_data_base",
+            "value": "https://raw.githubusercontent.com/nf-core/test-datasets/sarek3",
+            "step": "0"
+        },
+        {
+            "param": "modules_testdata_base_path",
+            "value": "null",
+            "step": "0"
+        },
+        {
+            "param": "validate_params",
+            "value": "true",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.ascat_alleles",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/ASCAT/G1000_alleles_hg19.zip",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.ascat_genome",
+            "value": "hg19",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.ascat_loci",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/ASCAT/G1000_loci_hg19.zip",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.ascat_loci_gc",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/ASCAT/GC_G1000_hg19.zip",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.ascat_loci_rt",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/ASCAT/RT_G1000_hg19.zip",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Sequence/BWAIndex/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.chr_dir",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Sequence/Chromosomes",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.dbsnp",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/GATKBundle/dbsnp_138.b37.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.dbsnp_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/GATKBundle/dbsnp_138.b37.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.dbsnp_vqsr",
+            "value": "--resource:dbsnp,known=false,training=true,truth=false,prior=2.0 dbsnp_138.b37.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.dict",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Sequence/WholeGenomeFasta/human_g1k_v37_decoy.dict",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Sequence/WholeGenomeFasta/human_g1k_v37_decoy.fasta",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.fasta_fai",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Sequence/WholeGenomeFasta/human_g1k_v37_decoy.fasta.fai",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.germline_resource",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/GATKBundle/af-only-gnomad.raw.sites.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.germline_resource_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/GATKBundle/af-only-gnomad.raw.sites.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.intervals",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/intervals/wgs_calling_regions_Sarek.list",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.known_snps",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/GATKBundle/1000G_phase1.snps.high_confidence.b37.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.known_snps_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/GATKBundle/1000G_phase1.snps.high_confidence.b37.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.known_snps_vqsr",
+            "value": "--resource:1000G,known=false,training=true,truth=true,prior=10.0 1000G_phase1.snps.high_confidence.b37.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.known_indels",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/GATKBundle/{1000G_phase1,Mills_and_1000G_gold_standard}.indels.b37.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.known_indels_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/GATKBundle/{1000G_phase1,Mills_and_1000G_gold_standard}.indels.b37.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.known_indels_vqsr",
+            "value": "--resource:1000G,known=false,training=true,truth=true,prior=10.0 1000G_phase1.indels.b37.vcf.gz --resource:mills,known=false,training=true,truth=true,prior=10.0 Mills_and_1000G_gold_standard.indels.b37.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.mappability",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/Control-FREEC/out100m2_hg19.gem",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.ngscheckmate_bed",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh37/Annotation/NGSCheckMate/SNP_GRCh37_hg19_woChr.bed",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.snpeff_db",
+            "value": "GRCh37.87",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.vep_cache_version",
+            "value": "113",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.vep_genome",
+            "value": "GRCh37",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh37.vep_species",
+            "value": "homo_sapiens",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.ascat_alleles",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/ASCAT/G1000_alleles_hg38.zip",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.ascat_genome",
+            "value": "hg38",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.ascat_loci",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/ASCAT/G1000_loci_hg38.zip",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.ascat_loci_gc",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/ASCAT/GC_G1000_hg38.zip",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.ascat_loci_rt",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/ASCAT/RT_G1000_hg38.zip",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Sequence/BWAIndex/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.bwamem2",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Sequence/BWAmem2Index/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.cf_chrom_len",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Sequence/Length/Homo_sapiens_assembly38.len",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.chr_dir",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Sequence/Chromosomes",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.dbsnp",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/GATKBundle/dbsnp_146.hg38.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.dbsnp_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/GATKBundle/dbsnp_146.hg38.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.dbsnp_vqsr",
+            "value": "--resource:dbsnp,known=false,training=true,truth=false,prior=2.0 dbsnp_146.hg38.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.dict",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Sequence/WholeGenomeFasta/Homo_sapiens_assembly38.dict",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.dragmap",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Sequence/dragmap/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Sequence/WholeGenomeFasta/Homo_sapiens_assembly38.fasta",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.fasta_fai",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Sequence/WholeGenomeFasta/Homo_sapiens_assembly38.fasta.fai",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.germline_resource",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/GATKBundle/af-only-gnomad.hg38.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.germline_resource_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/GATKBundle/af-only-gnomad.hg38.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.intervals",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/intervals/wgs_calling_regions_noseconds.hg38.bed",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.known_indels",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/GATKBundle/{Mills_and_1000G_gold_standard.indels.hg38,beta/Homo_sapiens_assembly38.known_indels}.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.known_indels_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/GATKBundle/{Mills_and_1000G_gold_standard.indels.hg38,beta/Homo_sapiens_assembly38.known_indels}.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.known_indels_vqsr",
+            "value": "--resource:gatk,known=false,training=true,truth=true,prior=10.0 Homo_sapiens_assembly38.known_indels.vcf.gz --resource:mills,known=false,training=true,truth=true,prior=10.0 Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.known_snps",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/GATKBundle/1000G_omni2.5.hg38.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.known_snps_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/GATKBundle/1000G_omni2.5.hg38.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.known_snps_vqsr",
+            "value": "--resource:1000G,known=false,training=true,truth=true,prior=10.0 1000G_omni2.5.hg38.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.mappability",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/Control-FREEC/out100m2_hg38.gem",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.ngscheckmate_bed",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/NGSCheckMate/SNP_GRCh38_hg38_wChr.bed",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.pon",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/GATKBundle/1000g_pon.hg38.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.pon_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/GATKBundle/1000g_pon.hg38.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.sentieon_dnascope_model",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/GATK/GRCh38/Annotation/Sentieon/SentieonDNAscopeModel1.1.model",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.snpeff_db",
+            "value": "GRCh38.105",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.vep_cache_version",
+            "value": "113",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.vep_genome",
+            "value": "GRCh38",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GATK.GRCh38.vep_species",
+            "value": "homo_sapiens",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Ensembl.GRCh37.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/Ensembl/GRCh37/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Ensembl.GRCh37.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/Ensembl/GRCh37/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Ensembl.GRCh37.ngscheckmate_bed",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/Ensembl/GRCh37/Annotation/NGSCheckMate/SNP_GRCh37_hg19_woChr.bed",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Ensembl.GRCh37.readme",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/Ensembl/GRCh37/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Ensembl.GRCh37.snpeff_db",
+            "value": "GRCh37.87",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Ensembl.GRCh37.vep_cache_version",
+            "value": "113",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Ensembl.GRCh37.vep_genome",
+            "value": "GRCh37",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Ensembl.GRCh37.vep_species",
+            "value": "homo_sapiens",
+            "step": "0"
+        },
+        {
+            "param": "genomes.NCBI.GRCh38.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.NCBI.GRCh38.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.NCBI.GRCh38.ngscheckmate_bed",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Annotation/NGSCheckMate/SNP_GRCh38_hg38_wChr.bed",
+            "step": "0"
+        },
+        {
+            "param": "genomes.NCBI.GRCh38.snpeff_db",
+            "value": "GRCh38.105",
+            "step": "0"
+        },
+        {
+            "param": "genomes.NCBI.GRCh38.vep_cache_version",
+            "value": "113",
+            "step": "0"
+        },
+        {
+            "param": "genomes.NCBI.GRCh38.vep_genome",
+            "value": "GRCh38",
+            "step": "0"
+        },
+        {
+            "param": "genomes.NCBI.GRCh38.vep_species",
+            "value": "homo_sapiens",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CHM13.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/UCSC/CHM13/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CHM13.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/UCSC/CHM13/Sequence/BWAIndex/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CHM13.bwamem2",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/UCSC/CHM13/Sequence/BWAmem2Index/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.chr_dir",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/Sequence/Chromosomes",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.dbsnp",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/MouseGenomeProject/mgp.v5.merged.snps_all.dbSNP142.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.dbsnp_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/MouseGenomeProject/mgp.v5.merged.snps_all.dbSNP142.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.dict",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.dict",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.fasta_fai",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa.fai",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.intervals",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/Annotation/intervals/GRCm38_calling_list.bed",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.known_indels",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/MouseGenomeProject/mgp.v5.merged.indels.dbSNP142.normed.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.known_indels_tbi",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/MouseGenomeProject/mgp.v5.merged.indels.dbSNP142.normed.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.mappability",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/Annotation/Control-FREEC/GRCm38_68_mm10.gem",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.readme",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/Ensembl/GRCm38/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.snpeff_db",
+            "value": "GRCm38.99",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.vep_cache_version",
+            "value": "102",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.vep_genome",
+            "value": "GRCm38",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCm38.vep_species",
+            "value": "mus_musculus",
+            "step": "0"
+        },
+        {
+            "param": "genomes.TAIR10.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.TAIR10.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.TAIR10.readme",
+            "value": "s3://ngi-igenomes/igenomes//Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EB2.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Bacillus_subtilis_168/Ensembl/EB2/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EB2.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Bacillus_subtilis_168/Ensembl/EB2/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EB2.readme",
+            "value": "s3://ngi-igenomes/igenomes//Bacillus_subtilis_168/Ensembl/EB2/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.UMD3.1.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Bos_taurus/Ensembl/UMD3.1/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.UMD3.1.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Bos_taurus/Ensembl/UMD3.1/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.UMD3.1.readme",
+            "value": "s3://ngi-igenomes/igenomes//Bos_taurus/Ensembl/UMD3.1/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.UMD3.1.snpeff_db",
+            "value": "UMD3.1.75",
+            "step": "0"
+        },
+        {
+            "param": "genomes.UMD3.1.vep_cache_version",
+            "value": "94",
+            "step": "0"
+        },
+        {
+            "param": "genomes.UMD3.1.vep_genome",
+            "value": "UMD3.1",
+            "step": "0"
+        },
+        {
+            "param": "genomes.UMD3.1.vep_species",
+            "value": "bos_taurus",
+            "step": "0"
+        },
+        {
+            "param": "genomes.WBcel235.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Caenorhabditis_elegans/Ensembl/WBcel235/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.WBcel235.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Caenorhabditis_elegans/Ensembl/WBcel235/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.WBcel235.snpeff_db",
+            "value": "WBcel235.105",
+            "step": "0"
+        },
+        {
+            "param": "genomes.WBcel235.vep_cache_version",
+            "value": "113",
+            "step": "0"
+        },
+        {
+            "param": "genomes.WBcel235.vep_genome",
+            "value": "WBcel235",
+            "step": "0"
+        },
+        {
+            "param": "genomes.WBcel235.vep_species",
+            "value": "caenorhabditis_elegans",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CanFam3.1.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Canis_familiaris/Ensembl/CanFam3.1/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CanFam3.1.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Canis_familiaris/Ensembl/CanFam3.1/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CanFam3.1.readme",
+            "value": "s3://ngi-igenomes/igenomes//Canis_familiaris/Ensembl/CanFam3.1/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CanFam3.1.snpeff_db",
+            "value": "CanFam3.1.99",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CanFam3.1.vep_cache_version",
+            "value": "104",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CanFam3.1.vep_genome",
+            "value": "CanFam3.1",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CanFam3.1.vep_species",
+            "value": "canis_lupus_familiaris",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCz10.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Danio_rerio/Ensembl/GRCz10/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.GRCz10.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Danio_rerio/Ensembl/GRCz10/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.BDGP6.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Drosophila_melanogaster/Ensembl/BDGP6/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.BDGP6.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Drosophila_melanogaster/Ensembl/BDGP6/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EquCab2.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Equus_caballus/Ensembl/EquCab2/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EquCab2.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Equus_caballus/Ensembl/EquCab2/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EquCab2.readme",
+            "value": "s3://ngi-igenomes/igenomes//Equus_caballus/Ensembl/EquCab2/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EB1.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Escherichia_coli_K_12_DH10B/Ensembl/EB1/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EB1.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Escherichia_coli_K_12_DH10B/Ensembl/EB1/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EB1.readme",
+            "value": "s3://ngi-igenomes/igenomes//Escherichia_coli_K_12_DH10B/Ensembl/EB1/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Galgal4.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Gallus_gallus/Ensembl/Galgal4/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Galgal4.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Gallus_gallus/Ensembl/Galgal4/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Gm01.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Glycine_max/Ensembl/Gm01/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Gm01.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Glycine_max/Ensembl/Gm01/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Gm01.readme",
+            "value": "s3://ngi-igenomes/igenomes//Glycine_max/Ensembl/Gm01/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Mmul_1.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Macaca_mulatta/Ensembl/Mmul_1/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Mmul_1.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Macaca_mulatta/Ensembl/Mmul_1/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Mmul_1.readme",
+            "value": "s3://ngi-igenomes/igenomes//Macaca_mulatta/Ensembl/Mmul_1/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.IRGSP-1.0.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Oryza_sativa_japonica/Ensembl/IRGSP-1.0/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.IRGSP-1.0.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Oryza_sativa_japonica/Ensembl/IRGSP-1.0/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CHIMP2.1.4.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Pan_troglodytes/Ensembl/CHIMP2.1.4/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CHIMP2.1.4.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Pan_troglodytes/Ensembl/CHIMP2.1.4/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.CHIMP2.1.4.readme",
+            "value": "s3://ngi-igenomes/igenomes//Pan_troglodytes/Ensembl/CHIMP2.1.4/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Rnor_5.0.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Rattus_norvegicus/Ensembl/Rnor_5.0/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Rnor_5.0.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Rattus_norvegicus/Ensembl/Rnor_5.0/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Rnor_6.0.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Rattus_norvegicus/Ensembl/Rnor_6.0/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Rnor_6.0.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Rattus_norvegicus/Ensembl/Rnor_6.0/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.R64-1-1.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Saccharomyces_cerevisiae/Ensembl/R64-1-1/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.R64-1-1.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Saccharomyces_cerevisiae/Ensembl/R64-1-1/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.R64-1-1.snpeff_db",
+            "value": "R64-1-1.105",
+            "step": "0"
+        },
+        {
+            "param": "genomes.R64-1-1.vep_cache_version",
+            "value": "113",
+            "step": "0"
+        },
+        {
+            "param": "genomes.R64-1-1.vep_genome",
+            "value": "R64-1-1",
+            "step": "0"
+        },
+        {
+            "param": "genomes.R64-1-1.vep_species",
+            "value": "saccharomyces_cerevisiae",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EF2.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Schizosaccharomyces_pombe/Ensembl/EF2/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EF2.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Schizosaccharomyces_pombe/Ensembl/EF2/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.EF2.readme",
+            "value": "s3://ngi-igenomes/igenomes//Schizosaccharomyces_pombe/Ensembl/EF2/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Sbi1.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Sorghum_bicolor/Ensembl/Sbi1/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Sbi1.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Sorghum_bicolor/Ensembl/Sbi1/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Sbi1.readme",
+            "value": "s3://ngi-igenomes/igenomes//Sorghum_bicolor/Ensembl/Sbi1/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Sscrofa10.2.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Sus_scrofa/Ensembl/Sscrofa10.2/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Sscrofa10.2.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Sus_scrofa/Ensembl/Sscrofa10.2/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.Sscrofa10.2.readme",
+            "value": "s3://ngi-igenomes/igenomes//Sus_scrofa/Ensembl/Sscrofa10.2/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.AGPv3.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Zea_mays/Ensembl/AGPv3/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.AGPv3.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Zea_mays/Ensembl/AGPv3/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg38.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/UCSC/hg38/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg38.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/UCSC/hg38/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg38.snpeff_db",
+            "value": "GRCh38.105",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg38.vep_cache_version",
+            "value": "113",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg38.vep_genome",
+            "value": "GRCh38",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg38.vep_species",
+            "value": "homo_sapiens",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg19.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/UCSC/hg19/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg19.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/UCSC/hg19/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg19.readme",
+            "value": "s3://ngi-igenomes/igenomes//Homo_sapiens/UCSC/hg19/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg19.snpeff_db",
+            "value": "GRCh37.87",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg19.vep_cache_version",
+            "value": "113",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg19.vep_genome",
+            "value": "GRCh37",
+            "step": "0"
+        },
+        {
+            "param": "genomes.hg19.vep_species",
+            "value": "homo_sapiens",
+            "step": "0"
+        },
+        {
+            "param": "genomes.mm10.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/UCSC/mm10/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.mm10.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/UCSC/mm10/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.mm10.readme",
+            "value": "s3://ngi-igenomes/igenomes//Mus_musculus/UCSC/mm10/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.mm10.snpeff_db",
+            "value": "GRCm38.99",
+            "step": "0"
+        },
+        {
+            "param": "genomes.mm10.vep_cache_version",
+            "value": "102",
+            "step": "0"
+        },
+        {
+            "param": "genomes.mm10.vep_genome",
+            "value": "GRCm38",
+            "step": "0"
+        },
+        {
+            "param": "genomes.mm10.vep_species",
+            "value": "mus_musculus",
+            "step": "0"
+        },
+        {
+            "param": "genomes.bosTau8.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Bos_taurus/UCSC/bosTau8/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.bosTau8.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Bos_taurus/UCSC/bosTau8/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.ce10.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Caenorhabditis_elegans/UCSC/ce10/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.ce10.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Caenorhabditis_elegans/UCSC/ce10/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.ce10.readme",
+            "value": "s3://ngi-igenomes/igenomes//Caenorhabditis_elegans/UCSC/ce10/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.canFam3.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Canis_familiaris/UCSC/canFam3/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.canFam3.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Canis_familiaris/UCSC/canFam3/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.canFam3.readme",
+            "value": "s3://ngi-igenomes/igenomes//Canis_familiaris/UCSC/canFam3/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.danRer10.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Danio_rerio/UCSC/danRer10/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.danRer10.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Danio_rerio/UCSC/danRer10/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.dm6.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Drosophila_melanogaster/UCSC/dm6/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.dm6.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Drosophila_melanogaster/UCSC/dm6/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.equCab2.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Equus_caballus/UCSC/equCab2/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.equCab2.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Equus_caballus/UCSC/equCab2/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.equCab2.readme",
+            "value": "s3://ngi-igenomes/igenomes//Equus_caballus/UCSC/equCab2/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.galGal4.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Gallus_gallus/UCSC/galGal4/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.galGal4.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Gallus_gallus/UCSC/galGal4/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.galGal4.readme",
+            "value": "s3://ngi-igenomes/igenomes//Gallus_gallus/UCSC/galGal4/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.panTro4.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Pan_troglodytes/UCSC/panTro4/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.panTro4.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Pan_troglodytes/UCSC/panTro4/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.panTro4.readme",
+            "value": "s3://ngi-igenomes/igenomes//Pan_troglodytes/UCSC/panTro4/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.rn6.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Rattus_norvegicus/UCSC/rn6/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.rn6.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Rattus_norvegicus/UCSC/rn6/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.sacCer3.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Saccharomyces_cerevisiae/UCSC/sacCer3/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.sacCer3.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Saccharomyces_cerevisiae/UCSC/sacCer3/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.sacCer3.readme",
+            "value": "s3://ngi-igenomes/igenomes//Saccharomyces_cerevisiae/UCSC/sacCer3/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.susScr3.bwa",
+            "value": "s3://ngi-igenomes/igenomes//Sus_scrofa/UCSC/susScr3/Sequence/BWAIndex/version0.6.0/",
+            "step": "0"
+        },
+        {
+            "param": "genomes.susScr3.fasta",
+            "value": "s3://ngi-igenomes/igenomes//Sus_scrofa/UCSC/susScr3/Sequence/WholeGenomeFasta/genome.fa",
+            "step": "0"
+        },
+        {
+            "param": "genomes.susScr3.readme",
+            "value": "s3://ngi-igenomes/igenomes//Sus_scrofa/UCSC/susScr3/Annotation/README.txt",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.dbsnp",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/vcf/dbsnp_146.hg38.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.dbsnp_tbi",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/vcf/dbsnp_146.hg38.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.dbsnp_vqsr",
+            "value": "--resource:dbsnp,known=false,training=true,truth=false,prior=2.0 dbsnp_146.hg38.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.dict",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/genome.dict",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.fasta",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/genome.fasta",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.fasta_fai",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/genome.fasta.fai",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.germline_resource",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/vcf/gnomAD.r2.1.1.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.germline_resource_tbi",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/vcf/gnomAD.r2.1.1.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.intervals",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/genome.interval_list",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.known_indels",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/vcf/mills_and_1000G.indels.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.known_indels_tbi",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/vcf/mills_and_1000G.indels.vcf.gz.tbi",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.known_indels_vqsr",
+            "value": "--resource:mills,known=false,training=true,truth=true,prior=10.0 mills_and_1000G.indels.vcf.gz",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.ngscheckmate_bed",
+            "value": "s3://ngi-igenomes/igenomes//genomics/homo_sapiens/genome/chr21/germlineresources/SNP_GRCh38_hg38_wChr.bed",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.snpeff_db",
+            "value": "WBcel235.105",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.vep_cache_version",
+            "value": "113",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.vep_genome",
+            "value": "WBcel235",
+            "step": "0"
+        },
+        {
+            "param": "genomes.testdata.nf-core.sarek.vep_species",
+            "value": "caenorhabditis_elegans",
+            "step": "0"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/c6/7cd183f703f72f9a15b85af75ced9b/wgs_calling_regions_noseconds.hg38.bed"
+                }
+            },
+            {
+                "uri": {
+                    "uri": "references/3.cram"
+                }
+            },
+            {
+                "uri": {
+                    "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/10/05282dcb183544f14c561f63a0d002/Homo_sapiens_assembly38.fasta"
+                }
+            },
+            {
+                "uri": {
+                    "uri": "references/3.cram.crai"
+                }
+            },
+            {
+                "uri": {
+                    "uri": "work/stage-7afea444-243c-411b-9012-6ba7e7926ba0/89/6a1b6f449c449c82c8deb9dc18c2a6/Homo_sapiens_assembly38.fasta.fai"
+                }
+            },
+            {
+                "uri": {
+                    "uri": "results/pipeline_info/nf_core_sarek_software_mqc_versions.yml"
+                }
+            },
+            {
+                "uri": {
+                    "uri": "https://github.com/nf-core/sarek/tree/5fe5cdff171e3baed603b3990cab7f7fd3fcb992/assets/multiqc_config.yml"
+                }
+            },
+            {
+                "uri": {
+                    "uri": "work/tmp/2b/a8a8a497aa44614749ba1f58652b33/workflow_summary_mqc.yaml"
+                }
+            },
+            {
+                "uri": {
+                    "uri": "work/tmp/e2/c6da51b985ee3dda3e3cc21ffafd17/methods_description_mqc.yaml"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "",
+                "uri": {
+                    "filename": "work/ca/9f38cf7f73f7d6f7c80a599162086b/test_sample.recal.regions.bed.gz.csi",
+                    "uri": "results/reports/mosdepth/test_sample/test_sample.recal.regions.bed.gz.csi"
+                }
+            },
+            {
+                "mediatype": "text/plain",
+                "uri": {
+                    "filename": "work/ca/9f38cf7f73f7d6f7c80a599162086b/test_sample.recal.mosdepth.summary.txt",
+                    "uri": "results/reports/mosdepth/test_sample/test_sample.recal.mosdepth.summary.txt"
+                }
+            },
+            {
+                "mediatype": "text/plain",
+                "uri": {
+                    "filename": "work/ca/9f38cf7f73f7d6f7c80a599162086b/test_sample.recal.mosdepth.region.dist.txt",
+                    "uri": "results/reports/mosdepth/test_sample/test_sample.recal.mosdepth.region.dist.txt"
+                }
+            },
+            {
+                "mediatype": "text/plain",
+                "uri": {
+                    "filename": "work/ca/9f38cf7f73f7d6f7c80a599162086b/test_sample.recal.mosdepth.global.dist.txt",
+                    "uri": "results/reports/mosdepth/test_sample/test_sample.recal.mosdepth.global.dist.txt"
+                }
+            },
+            {
+                "mediatype": "application/gzip",
+                "uri": {
+                    "filename": "work/ca/9f38cf7f73f7d6f7c80a599162086b/test_sample.recal.regions.bed.gz",
+                    "uri": "results/reports/mosdepth/test_sample/test_sample.recal.regions.bed.gz"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "filename": "work/c4/2cfdc0dbd90aad1cccc89f203d1063/test_sample.recal.cram.stats",
+                    "uri": "results/reports/samtools/test_sample/test_sample.recal.cram.stats"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "filename": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.diploid_sv.vcf.gz.tbi",
+                    "uri": "results/variant_calling/manta/test_sample/test_sample.manta.diploid_sv.vcf.gz.tbi"
+                }
+            },
+            {
+                "mediatype": "application/gzip",
+                "uri": {
+                    "filename": "work/23/19a224d2780183cfc45f161f762f90/test_sample.manta.diploid_sv.vcf.gz",
+                    "uri": "results/variant_calling/manta/test_sample/test_sample.manta.diploid_sv.vcf.gz"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "filename": "work/76/5f9a2bf9bd522637f75c64ef52a53c/test_sample.manta.diploid_sv.TsTv.qual",
+                    "uri": "results/reports/vcftools/manta/test_sample/test_sample.manta.diploid_sv.TsTv.qual"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "filename": "work/db/bca21980f9861d985664f3f27bba79/test_sample.manta.diploid_sv.TsTv.count",
+                    "uri": "results/reports/vcftools/manta/test_sample/test_sample.manta.diploid_sv.TsTv.count"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "filename": "work/4a/7ea1bf04e0277422e5e826ddc5885f/test_sample.manta.diploid_sv.FILTER.summary",
+                    "uri": "results/reports/vcftools/manta/test_sample/test_sample.manta.diploid_sv.FILTER.summary"
+                }
+            },
+            {
+                "mediatype": "text/plain",
+                "uri": {
+                    "filename": "work/b9/d89a270187cf298cd11ed9600ba254/test_sample.manta.diploid_sv.bcftools_stats.txt",
+                    "uri": "results/reports/bcftools/manta/test_sample/test_sample.manta.diploid_sv.bcftools_stats.txt"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "filename": "work/12/939494e50a083f6d02898d7944d9b1/multiqc_data",
+                    "uri": "results/multiqc/multiqc_data"
+                }
+            },
+            {
+                "mediatype": "text/html",
+                "uri": {
+                    "filename": "work/12/939494e50a083f6d02898d7944d9b1/multiqc_report.html",
+                    "uri": "results/multiqc/multiqc_report.html"
+                }
+            },
+            {
+                "mediatype": "",
+                "uri": {
+                    "filename": "work/12/939494e50a083f6d02898d7944d9b1/multiqc_plots",
+                    "uri": "results/multiqc/multiqc_plots"
+                }
+            }
+        ]
+    },
+    "error_domain": {
+        "empirical_error": {
+            
+        },
+        "algorithmic_error": {
+            
+        }
+    }
+}

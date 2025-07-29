@@ -1,0 +1,15 @@
+[2025-07-11 12:43:22,660] multiqc.config                                     [INFO   ]  Loading config settings from: multiqc_config.yml
+[2025-07-11 12:43:22,660] multiqc.config                                     [ERROR  ]  Config 'custom_logo' path not found, skipping (nf-core-sarek_logo_light.png)
+[2025-07-11 12:43:22,882] multiqc.core.version_check                         [WARNING]  MultiQC Version v1.30 now available!
+[2025-07-11 12:43:22,882] multiqc.core.file_search                           [INFO   ]  Search path: /home/dolmom/Desktop/cnv_pipeline/work/12/939494e50a083f6d02898d7944d9b1
+[2025-07-11 12:43:22,883] multiqc.core.file_search                           [INFO   ]  Only using modules: custom_content, fastqc, fastp, picard, samtools, mosdepth, gatk, bcftools, vcftools, snpeff, vep
+[2025-07-11 12:43:22,953] multiqc.modules.custom_content.custom_content      [WARNING]  HTML plot type found with more than one dataset in nf-core-sarek-summary
+[2025-07-11 12:43:22,954] multiqc.modules.custom_content.custom_content      [INFO   ]  nf-core-sarek-summary: Found 1 sample (html)
+[2025-07-11 12:43:22,954] multiqc.modules.custom_content.custom_content      [WARNING]  HTML plot type found with more than one dataset in nf-core-sarek-methods-description
+[2025-07-11 12:43:22,954] multiqc.modules.custom_content.custom_content      [INFO   ]  nf-core-sarek-methods-description: Found 1 sample (html)
+[2025-07-11 12:43:22,959] multiqc.plots.bargraph                             [WARNING]  Tried to make bar plot, but had no data: bcftools-stats-subtypes
+[2025-07-11 12:43:23,016] multiqc.modules.bcftools.bcftools                  [INFO   ]  Found 1 stats reports
+[2025-07-11 12:43:23,021] multiqc.modules.vcftools.vcftools                  [INFO   ]  Found 1 TsTv.count reports
+[2025-07-11 12:43:23,023] multiqc.modules.vcftools.vcftools                  [INFO   ]  Found 1 TsTv.qual reports
+[2025-07-11 12:43:23,027] multiqc.core.file_search                           [INFO   ]  Only using modules: bcftools, vcftools, nf-core-sarek-summary, nf-core-sarek-methods-description
+[2025-07-11 12:43:23,027] multiqc.core.write_results                         [INFO   ]  Rendering plots. Export plots to formats png, svg, pdf is requested, so it might take a while. To disable plot export, set `export_plots: false` in config, or remove the `--export-plots` command line flag

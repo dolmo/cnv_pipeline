@@ -1,0 +1,4 @@
+Module	Section	Sample Name	Source
+Bcftools	stats	test_sample.manta.diploid_sv	/home/dolmom/Desktop/cnv_pipeline/work/12/939494e50a083f6d02898d7944d9b1/6/test_sample.manta.diploid_sv.bcftools_stats.txt
+Vcftools	all_sections	TsTv by counts	/home/dolmom/Desktop/cnv_pipeline/work/12/939494e50a083f6d02898d7944d9b1/4/test_sample.manta.diploid_sv.TsTv.count
+Vcftools	all_sections	TsTv by quality	/home/dolmom/Desktop/cnv_pipeline/work/12/939494e50a083f6d02898d7944d9b1/3/test_sample.manta.diploid_sv.TsTv.qual

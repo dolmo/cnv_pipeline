@@ -1,0 +1,4 @@
+10.1093/bioinformatics/btw354                      # MultiQC
+10.1093/gigascience/giab008                        # bcftools
+10.1093/bioinformatics/btr330                      # vcftools
+

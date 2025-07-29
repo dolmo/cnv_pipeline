@@ -1,0 +1,2 @@
+Sample	0	1
+test_sample.manta.diploid_sv.TsTv.count	(0.0, nan)	(1.0, nan)

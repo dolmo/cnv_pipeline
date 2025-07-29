@@ -1,0 +1,5 @@
+input: 'input/sample.csv' 
+outdir: 'results/' 
+genome: 'GATK.GRCh38'
+tools: 'manta'
+step: 'variant_calling'
