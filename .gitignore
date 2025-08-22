@@ -1,0 +1,109 @@
+# Nextflow logs and work directories
+.nextflow.log*
+.nextflow.*
+work/
+jax/
+# Common sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Alignment files
+*.sam
+*.bam
+*.cram
+*.bai
+*.crai
+
+# Variant files
+*.vcf
+*.vcf.gz
+*.bcf
+*.bcf.gz
+*.tbi
+*.csi
+
+# BED and annotation files
+*.bed
+*.bed.gz
+*.bedGraph
+*.narrowPeak
+*.broadPeak
+
+# Coverage and counts
+*.cov
+*.depth
+*.wig
+*.bigWig
+*.counts
+*.idx
+
+# Temporary / intermediate files
+*.tmp
+*.temp
+*.swp
+*.sai
+*.log
+
+# Common results from CNV and SV tools
+*.cnr
+*.cns
+*.seg
+*.xls
+*.txt
+*.tsv
+*.fai
+*.dict
+*.gzip
+*.lz4
+*.lzma
+*.xz
+*.zst
+*.bgz
+*.bgzf 
+*.cram
+*.cram.crai
+*.svs
+*.vcf.idx
+*.vcf.tbi
+*.bcf.idx
+*.bcf.tbi
+*.gvcf
+*.gvcf.idx
+*.gvcf.tbi
+*.fasta
+*.fasta.fai
+*.fa
+*.fa.fai
+*.fna
+*.fna.fai
+*.fa.dict
+*.fasta.dict
+*.fna.dict
+*.bed.gz.tbi
+*.bedGraph.gz
+*.bedGraph.gz.tbi
+*.bigWig.bw
+*.bigWig.bw.tbi
+*.wig.gz
+*.wig.gz.tbi
+
+HG001_comparison/
+manta_test_files/
+cnv_kit_test/
+samples_cnv_kit/
+work/
+
+
+# Conda / Singularity / Docker
+.conda/
+*.sif
+*.img
+singularity/
+
+# General OS / editor cruft
+.DS_Store
+Thumbs.db
+
+

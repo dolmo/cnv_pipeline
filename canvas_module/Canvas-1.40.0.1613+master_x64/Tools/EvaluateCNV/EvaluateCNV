@@ -1,0 +1,4 @@
+EvaluateCNV_DIR="$( dirname "$( readlink -f "${BASH_SOURCE[0]}" )" )"
+export PATH=/illumina/sync/software/unofficial/Isas/packages/dotnet-2.0.0:$PATH
+export COMPlus_gcAllowVeryLargeObjects=1
+exec dotnet ${EvaluateCNV_DIR}/EvaluateCNV.dll "$@"

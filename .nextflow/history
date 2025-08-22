@@ -1,0 +1,35 @@
+2025-07-30 12:42:46	34m 52s	backstabbing_magritte	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	3a367a91-f2d5-4250-82ff-879cd715eebc	nextflow run nf-core/sarek -profile singularity -params-file params_PGP.yml
+2025-07-30 16:00:00	-	festering_dijkstra	-	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	1fdd817c-8cf7-4e19-86db-537b22736307	nextflow run nf-core/sarek -profile singularity -params-file params_PGP.yml
+2025-07-30 16:03:21	11.6s	soggy_heyrovsky	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	92893dd7-f666-446f-9215-74d8f1aa7ca0	nextflow run nf-core/sarek -profile singularity -params-file params_PGP.yml
+2025-07-30 16:03:58	4m 52s	goofy_rubens	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	5ee5f714-7395-47e3-a44f-8eb1150f5381	nextflow run nf-core/sarek -profile singularity -params-file params_PGP.yml
+2025-07-30 16:09:38	2m 40s	awesome_ochoa	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	b9a2c921-5f44-4a0c-bbb2-c0dfbe9be43a	nextflow run nf-core/sarek -profile singularity -params-file params_PGP.yml
+2025-07-30 16:17:23	1h 41m 24s	tiny_khorana	OK	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	e2558a27-ce7d-424d-b477-36ca82862331	nextflow run nf-core/sarek -profile singularity -params-file params_PGP.yml --max_cpus 12
+2025-07-31 17:20:29	8m 22s	amazing_noyce	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	08e9da6c-a154-4ef4-90ff-3dd1dcd8862d	nextflow run nf-core/sarek -profile singularity -params-file params_PGP.yml
+2025-07-31 17:29:05	3m 28s	deadly_liskov	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	c051caab-5bfe-4cdb-bdc7-bbf9295d4525	nextflow run nf-core/sarek -profile singularity -params-file params_PGP.yml
+2025-08-11 16:55:41	-	infallible_bhabha	-	dacd5143f325dbd451c9022a208fab22	0bb479ae-e87c-402e-98b1-2df4aff82b64	nextflow run . --bam test_gatk_cnv/sars.bam --reference test_gatk_cnv/sars_cov2.fa --intervals test_gatk_cnv/sars_cov2_intervals.bed
+2025-08-11 16:55:54	-	romantic_kowalevski	-	dacd5143f325dbd451c9022a208fab22	88af257e-04da-463a-baf2-7e1d02af2d52	nextflow run . --bam test_gatk_cnv/sars.bam --reference test_gatk_cnv/sars_cov2.fa --intervals test_gatk_cnv/sars_cov2_intervals.bed
+2025-08-11 16:57:26	-	ecstatic_hoover	-	988636b5f3bbcfbc0a63c02fa8cd02af	4fbce42a-e7b2-41d4-b9ff-278c647cb598	nextflow run . --bam test_gatk_cnv/sars.bam --reference test_gatk_cnv/sars_cov2.fa --intervals test_gatk_cnv/sars_cov2_intervals.bed
+2025-08-11 17:00:13	-	agitated_moriondo	-	c5f7bd957a746b41e2634f54b8a797d5	4f83a7fb-bd01-48a1-ba29-6b9176256eeb	nextflow run . --bam test_gatk_cnv/sars.bam --reference test_gatk_cnv/sars_cov2.fa --intervals test_gatk_cnv/sars_cov2_intervals.bed
+2025-08-11 17:01:20	1.8s	confident_carlsson	ERR	945b0242c3efce9de17566deefd74312	816e457f-aa8a-4058-b690-fbd03a58a8d5	nextflow run . --bam test_gatk_cnv/sars.bam --reference test_gatk_cnv/sars_cov2.fa --intervals test_gatk_cnv/sars_cov2_intervals.bed
+2025-08-11 17:01:28	1.1s	determined_nightingale	ERR	945b0242c3efce9de17566deefd74312	f6d277b8-45ef-4740-9ce3-96d4d7a41c68	nextflow run . --bam test_gatk_cnv/sars.bam --reference test_gatk_cnv/sars_cov2.fa --intervals test_gatk_cnv/sars_cov2_intervals.bed
+2025-08-11 17:36:08	1.7s	serene_ritchie	ERR	0cc9fb292c2d14e0cec58603113a386e	7001a11a-3661-478f-af57-80a850b979d5	nextflow run main.nf
+2025-08-11 17:36:29	2s	astonishing_linnaeus	ERR	0cc9fb292c2d14e0cec58603113a386e	dc11bfd3-23a0-4c7b-a941-12b923bdc403	nextflow run main.nf
+2025-08-12 14:25:58	1.6s	exotic_mercator	ERR	0cc9fb292c2d14e0cec58603113a386e	2db179a1-f273-4894-960a-d4314b604f30	nextflow run main.nf
+2025-08-13 10:56:58	1.5s	mad_euclid	ERR	0cc9fb292c2d14e0cec58603113a386e	dc1a9a9a-4b69-4997-aad9-d3b12e2e8071	nextflow run main.nf
+2025-08-20 11:54:09	5.6s	drunk_agnesi	ERR	4ea6e5ecb939bdb05db4a2f27f20ec41	50a6e761-1e0d-4863-a097-fd54b1ffc998	nextflow run /home/dolmom/Desktop/cnv_pipeline_backup/main.nf -profile singularity
+2025-08-21 12:00:03	9.1s	infallible_stone	OK	5a2ccada5ed4ff25cde01c6bcd1dd88e	02f54e5a-657a-49e3-9eef-52aa10ca6525	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-21 12:02:54	-	scruffy_monod	-	5a2ccada5ed4ff25cde01c6bcd1dd88e	0fcb0285-d479-4a6f-8f4e-ad1385465e7c	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-21 12:04:33	-	gloomy_crick	-	5a2ccada5ed4ff25cde01c6bcd1dd88e	1f5983af-a945-4a8b-a19e-b5455ceed3c0	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-21 12:05:40	-	nice_curry	-	5a2ccada5ed4ff25cde01c6bcd1dd88e	fc0b8b53-9af3-4c05-9aba-0119abfb8d87	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-21 12:06:36	28.9s	exotic_wozniak	ERR	e5a9bb21870f2a03749ee6492e4b1067	72e152a9-137c-4198-9c7e-8495ab151d59	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-21 12:09:16	-	hopeful_heisenberg	-	5a2ccada5ed4ff25cde01c6bcd1dd88e	f07068d2-57ce-460d-aedf-42b51d412905	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-21 12:11:16	5.8s	boring_yonath	OK	5a2ccada5ed4ff25cde01c6bcd1dd88e	9ce2da03-1f60-4def-8d39-ce0a46a3b6ac	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-21 12:12:56	-	compassionate_shockley	-	5a2ccada5ed4ff25cde01c6bcd1dd88e	5c4797bc-4318-450a-8d53-b75b2663e6ca	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-21 12:15:16	6.4s	awesome_dijkstra	ERR	0b28179e56beb3b8b314f370ed05fdfc	cf9bebb3-b582-48e7-a852-203ece3f3956	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-21 12:16:20	6s	spontaneous_pauling	ERR	52e718c390566be638d2aa39ea7872de	5390afb9-2056-4eb9-a92a-04cab4432fc4	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-21 12:23:25	29.9s	happy_lalande	ERR	fb095717308b5d5a0ceb38b075b2cf5a	1de4ffb0-3688-4893-b68f-033fb2d52863	nextflow run /home/dolmom/Desktop/cnv_pipeline/main.nf -profile singularity
+2025-08-22 12:30:33	12.6s	irreverent_montalcini	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	39322088-c458-4760-86b6-5b06cb0d6cb3	nextflow run nf-core/sarek -r 3.5.1 -profile singularity -params-file sarek_pipeline.yml
+2025-08-22 12:32:48	-	tender_curran	-	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	adfcb78b-f933-4880-a038-574ab8d20391	nextflow run nf-core/sarek -r 3.5.1 -profile singularity -params-file sarek_pipeline.yml
+2025-08-22 12:33:59	14.5s	magical_lamarr	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	7f843dca-deec-4c18-bc40-dfce65840627	nextflow run nf-core/sarek -r 3.5.1 -profile singularity -params-file sarek_pipeline.yml
+2025-08-22 12:37:44	24.7s	maniac_mcnulty	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	aaf48583-4752-4657-bb23-6e96452cef77	nextflow run nf-core/sarek -r 3.5.1 -profile singularity -params-file sarek_pipeline.yml
+2025-08-22 12:44:27	6m 46s	nice_feynman	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	7b3df467-de2a-4faa-992d-325db36f0967	nextflow run nf-core/sarek -r 3.5.1 -profile singularity -params-file sarek_pipeline.yml

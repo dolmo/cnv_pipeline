@@ -1,0 +1,8 @@
+input: 'input_sarek/sample.csv' 
+outdir: 'cnv_kit_test/' 
+genome: 'GATK.GRCh38'
+tools: 'cnvkit'
+step: 'mapping'
+wes: true
+intervals: samples_cnv_kit/LIB0111.roi-regions_cleaned.bed
+ 

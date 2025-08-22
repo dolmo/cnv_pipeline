@@ -1,0 +1,2 @@
+patient,sample,lane,fastq_1,fastq_2
+patient2,sample2,L001,samples_cnv_kit/25P40251_S2_L001_R1_001.fastq.gz, samples_cnv_kit/25P40251_S2_L001_R2_001.fastq.gz
