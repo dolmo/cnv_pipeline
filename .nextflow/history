@@ -33,3 +33,5 @@
 2025-08-22 12:33:59	14.5s	magical_lamarr	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	7f843dca-deec-4c18-bc40-dfce65840627	nextflow run nf-core/sarek -r 3.5.1 -profile singularity -params-file sarek_pipeline.yml
 2025-08-22 12:37:44	24.7s	maniac_mcnulty	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	aaf48583-4752-4657-bb23-6e96452cef77	nextflow run nf-core/sarek -r 3.5.1 -profile singularity -params-file sarek_pipeline.yml
 2025-08-22 12:44:27	6m 46s	nice_feynman	ERR	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	7b3df467-de2a-4faa-992d-325db36f0967	nextflow run nf-core/sarek -r 3.5.1 -profile singularity -params-file sarek_pipeline.yml
+2025-08-25 18:18:34	-	prickly_murdock	-	d1765a58943a3539688beee62fffbaeb	85b41ec4-b9ea-4e60-968e-bf3922a259bf	nextflow run /home/dolmomar/cnv_pipeline/jax_module/main.nf --help
+2025-08-26 09:25:55	-	nauseous_hoover	-	5fe5cdff171e3baed603b3990cab7f7fd3fcb992	5ba466e5-cbe1-4ff6-b7da-0cec966e40ff	nextflow run nf-core/sarek -profile test,singularity
