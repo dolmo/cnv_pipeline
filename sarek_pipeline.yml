@@ -1,8 +1,20 @@
-input: 'input_sarek/sample.csv' 
-outdir: 'cnv_kit_test/' 
+# Input and Output
+input: '../input_sarek/sample.csv'
+outdir: 'sarek_jax_cnv_test/'
+
+# Reference and Tools
 genome: 'GATK.GRCh38'
-tools: 'cnvkit'
-step: 'mapping'
-wes: true
-intervals: samples_cnv_kit/LIB0111.roi-regions_cleaned.bed
- 
+tools: 'jax_cnv'
+step: 'variant_calling'  # Start here for faster testing
+
+# JAX-CNV specific
+jax_cnv_sif: '../jax_module/jax-cnv.sif'
+
+# Optional settings
+publish_dir_mode: 'copy'
+save_output_as_bam: false
+
+# Resource settings (optional)
+max_cpus: 8
+max_memory: '32.GB'
+max_time: '8.h'
