@@ -2,39 +2,45 @@ Bootstrap: docker
 From: ubuntu:20.04
 
 %environment
-    export PATH=/opt/jax-cnv/bin:/opt/jellyfish/bin:$PATH
+    export PATH=/opt/jax-cnv/bin:/opt/jellyfish/bin:/usr/local/AnnotSV/bin:$PATH
+    export ANNOTSV=/usr/local/AnnotSV
 
 %post
-    set -e  # stop on first error
+    set -e
 
-	apt-get update
-	DEBIAN_FRONTEND=noninteractive apt-get install -y \
-	    build-essential \
-	    gcc \
-	    g++ \
-	    zlib1g-dev \
-	    wget \
-	    git \
-	    make \
-	    automake \
-	    autoconf \
-	    libtool \
-	    pkg-config \
-	    bzip2 \
-	    libssl-dev \
-	    libbz2-dev \
-	    liblzma-dev \
-	    libcurl4-openssl-dev \
-	    python3 \
-	    python3-pip \
-	    cmake \
-	    curl \
-	    ca-certificates \
-	    libncurses5-dev \
-	    libncursesw5-dev
+    apt-get update
+    DEBIAN_FRONTEND=noninteractive apt-get install -y \
+        build-essential gcc g++ zlib1g-dev wget git make automake autoconf \
+        libtool pkg-config bzip2 libssl-dev libbz2-dev liblzma-dev \
+        libcurl4-openssl-dev python3 python3-pip python3-dev cmake curl \
+        ca-certificates libncurses5-dev libncursesw5-dev bc r-base r-base-dev \
+        tcl tcl-dev bedtools
 
+    ln -sf /usr/bin/python3 /usr/bin/python
     apt-get clean
     rm -rf /var/lib/apt/lists/*
+
+    # Install Python packages
+    pip3 install pandas numpy scipy matplotlib seaborn
+
+    # Install R packages
+    R -e "install.packages(c('ggplot2', 'dplyr'), repos='https://cran.rstudio.com/')"
+
+    # Install htslib
+    cd /tmp
+    wget https://github.com/samtools/htslib/releases/download/1.17/htslib-1.17.tar.bz2
+    tar -xjf htslib-1.17.tar.bz2
+    cd htslib-1.17
+    ./configure --prefix=/usr/local
+    make && make install
+
+    # Install bcftools
+    cd /tmp
+    wget https://github.com/samtools/bcftools/releases/download/1.17/bcftools-1.17.tar.bz2
+    tar -xjf bcftools-1.17.tar.bz2
+    cd bcftools-1.17
+    ./configure --prefix=/usr/local
+    make && make install
 
     # Install Samtools
     cd /opt
@@ -42,10 +48,22 @@ From: ubuntu:20.04
     tar -xvjf samtools-1.22.tar.bz2
     cd samtools-1.22
     ./configure --prefix=/usr/local
-    make
-    make install
+    make && make install
 
-    # Clone JAX-CNV and update submodules
+    # Install AnnotSV (without databases for now)
+    cd /tmp
+    wget https://github.com/lgmgeo/AnnotSV/archive/refs/tags/v3.4.2.tar.gz
+    tar -xzf v3.4.2.tar.gz
+    cd AnnotSV-3.4.2
+    
+    # Install AnnotSV using make
+    make PREFIX=/usr/local/AnnotSV install
+    
+    # Install human annotations using the correct make target
+    echo "Installing AnnotSV human annotations..."
+    make DESTDIR= PREFIX=/usr/local/AnnotSV install-human-annotation
+
+    # Install JAX-CNV
     mkdir -p /tools
     cd /tools
     git clone https://github.com/TheJacksonLaboratory/JAX-CNV.git
@@ -53,9 +71,6 @@ From: ubuntu:20.04
     git submodule init
     git config submodule.lib/fastaq.url https://github.com/wanpinglee/fastaq.git
     git submodule update --recursive --init
-
-    # Build JAX-CNV
-    cd /tools/JAX-CNV
     make || (echo "Build failed" && exit 1)
 
     # Install Jellyfish
@@ -64,11 +79,22 @@ From: ubuntu:20.04
     tar -xvzf jellyfish-2.3.0.tar.gz
     cd jellyfish-2.3.0
     ./configure --prefix=/opt/jellyfish
-    make
-    make install
+    make && make install
 
+    # Create symlinks for JAX-CNV
+    mkdir -p /opt/jax-cnv/bin
+    ln -sf /tools/JAX-CNV/bin/* /opt/jax-cnv/bin/
+
+    # Test installations
+    echo "Testing installations..."
+    /usr/local/bin/samtools --version
+    /usr/local/bin/bcftools --version
+    /usr/bin/bedtools --version
+    /usr/local/AnnotSV/bin/AnnotSV -version
+    /usr/bin/R --version
+    /usr/bin/python3 --version
 
 %labels
     Author David Olmo Marchal - Mario Ruiz Pérez
-    Version v1.0
-    Description "Singularity container with JAX-CNV + Jellyfish"
+    Version v4.0
+    Description "Complete CNV analysis container: JAX-CNV + AnnotSV + all tools"
