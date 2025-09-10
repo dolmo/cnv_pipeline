@@ -4,9 +4,9 @@ process JAX_CNV {
 
     container params.jax_cnv_sif
 
-    cpus 8  // CHANGED: Increased from 4
-    memory '16 GB'  // CHANGED: Increased from 8
-    time '12.h'  // ADDED: Explicit time limit
+    cpus 8
+    memory '16 GB'
+    time '12.h'
     publishDir "results/jax_cnv", mode: 'copy'
 
     input:
@@ -42,7 +42,7 @@ process JAX_CNV {
     # Convert CRAM->BAM if needed or copy BAM
     if [[ "$cram" == *.cram ]]; then
       echo "[JAX_CNV] converting CRAM -> BAM"
-      samtools view -T "$ref" -b -@ ${task.cpus} -o ${prefix}_unsorted.bam "$cram"  # CHANGED: Added -@ ${task.cpus}
+      samtools view -T "$ref" -b -@ ${task.cpus} -o ${prefix}_unsorted.bam "$cram"
     else
       echo "[JAX_CNV] copying BAM into workdir"
       cp "$cram" ${prefix}_unsorted.bam
@@ -64,11 +64,11 @@ process JAX_CNV {
 
     # Count kmers
     echo "[JAX_CNV] counting kmers with \$JF_CMD"
-    \$JF_CMD count -m 25 -s 1G -t ${task.cpus} -C -o ${prefix}.jellydb "$ref"  # CHANGED: -s 100M to -s 1G
+    \$JF_CMD count -m 25 -s 1G -t ${task.cpus} -C -o ${prefix}.jellydb "$ref"
 
-    # Dump .jf to .kmer FASTA
+    # 🔧 FIX: Remove invalid parameters
     echo "[JAX_CNV] dumping jellyfish db -> .kmer_out"
-    JAX-CNV GrabJellyfishKmer --ascii -i ${prefix}.jellydb -f "$ref" -o ${prefix}.kmer_out
+    JAX-CNV GrabJellyfishKmer -i ${prefix}.jellydb -f "$ref" -o ${prefix}.kmer_out
 
     # Run JAX-CNV GetCnvSignal
     echo "[JAX_CNV] running GetCnvSignal"
@@ -77,17 +77,15 @@ process JAX_CNV {
     # cleanup
     rm -f ${prefix}_unsorted.bam ${prefix}.jellydb ${prefix}.kmer_out
 
-    # FIXED: Properly capture and format versions
+    # Get versions
     SAMTOOLS_VERSION=\$(samtools --version 2>&1 | head -1 | sed 's/samtools //' | tr -d '\\n\\r')
     JELLYFISH_VERSION=\$(\$JF_CMD --version 2>&1 | head -1 | sed 's/jellyfish //' | tr -d '\\n\\r' || echo "unknown")
     JAX_VERSION=\$(JAX-CNV --version 2>&1 | head -1 | sed 's/.*[Vv]ersion[: ]*//' | tr -d '\\n\\r' || echo "unknown")
     
-    # Ensure versions are not empty and contain only valid characters
     SAMTOOLS_VERSION=\${SAMTOOLS_VERSION:-"unknown"}
     JELLYFISH_VERSION=\${JELLYFISH_VERSION:-"unknown"}
     JAX_VERSION=\${JAX_VERSION:-"unknown"}
     
-    # Remove any problematic characters
     SAMTOOLS_VERSION=\$(echo "\$SAMTOOLS_VERSION" | sed 's/[^a-zA-Z0-9._-]//g')
     JELLYFISH_VERSION=\$(echo "\$JELLYFISH_VERSION" | sed 's/[^a-zA-Z0-9._-]//g')
     JAX_VERSION=\$(echo "\$JAX_VERSION" | sed 's/[^a-zA-Z0-9._-]//g')

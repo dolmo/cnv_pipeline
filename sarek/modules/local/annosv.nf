@@ -31,6 +31,7 @@ process ANNOSV {
         -outputDir . \\
         -svtBEDcol 4 \\
         -annotationsDir /usr/local/AnnotSV/share/AnnotSV \\
+        -typeOfAnnotation full \\
         -tx ENSEMBL \\
         -overlap 70
 

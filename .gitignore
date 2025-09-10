@@ -107,3 +107,6 @@ singularity/
 Thumbs.db
 
 
+full_test/
+annotate_cardiac_precise.sh
+annotate_cardiac_precise.py

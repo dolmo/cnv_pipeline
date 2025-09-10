@@ -81,7 +81,7 @@ From: ubuntu:20.04
     ./configure --prefix=/opt/jellyfish
     make && make install
 
-    # Create symlinks for JAX-CNV
+    # Create symlinks for JAX-CNV   
     mkdir -p /opt/jax-cnv/bin
     ln -sf /tools/JAX-CNV/bin/* /opt/jax-cnv/bin/
 

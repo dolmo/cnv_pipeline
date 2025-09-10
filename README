@@ -1,0 +1,5 @@
+When you have a script you want to integrate
+1. create a nextflow .nf file
+2. then edit nextflow_schema.json
+3. edit nextflow.config for parameters
+4. edit main.nf of entire pipeline

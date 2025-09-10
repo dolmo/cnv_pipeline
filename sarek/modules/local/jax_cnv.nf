@@ -4,9 +4,6 @@ process JAX_CNV {
 
     container params.jax_cnv_sif
 
-    cpus 8  // CHANGED: Increased from 4
-    memory '16 GB'  // CHANGED: Increased from 8
-    time '12.h'  // ADDED: Explicit time limit
     publishDir "results/jax_cnv", mode: 'copy'
 
     input:
@@ -68,7 +65,7 @@ process JAX_CNV {
 
     # Dump .jf to .kmer FASTA
     echo "[JAX_CNV] dumping jellyfish db -> .kmer_out"
-    JAX-CNV GrabJellyfishKmer --ascii -i ${prefix}.jellydb -f "$ref" -o ${prefix}.kmer_out -t 40
+    JAX-CNV GrabJellyfishKmer --ascii -i ${prefix}.jellydb -f "$ref" -o ${prefix}.kmer_out 
 
     # Run JAX-CNV GetCnvSignal
     echo "[JAX_CNV] running GetCnvSignal"
